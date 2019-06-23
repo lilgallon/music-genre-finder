@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
@@ -19,11 +20,15 @@ def youtube_search(developer_key: str, term: str, max_results: int) -> list:
 
     # Call the search.list method to retrieve results matching the specified
     # query term.
-    search_response = youtube.search().list(
-        q=term,
-        part='id,snippet',
-        maxResults=max_results
-    ).execute()
+    try:
+        search_response = youtube.search().list(
+            q=term,
+            part='id,snippet',
+            maxResults=max_results
+        ).execute()
+    except HttpError as e:
+        print('An HTTP error %d occurred:\n%s' % (e.resp.status, e.content))
+        return []
 
     videos = []
     channels = []

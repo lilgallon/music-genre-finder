@@ -1,55 +1,40 @@
 from configparser import ConfigParser
-from googleapiclient.errors import HttpError
 from youtube.search import youtube_search
-from youtube.info import video_info
+from genre.genreFinder import find_genre
 
 config = ConfigParser()
 
 
 def main():
-    print('main')
+    # 1. Get the files to analyse
+    # ...
+    files = ["Bring Me The Horizon - Mother Tongue (Sub Focus Remix)",
+             "Tantrum. Today - Amateur",
+             "G-Eazy - Random (Official Audio)"]
 
+    # 2. Find their video ID
+    # ...
+    video_ids = []
+    for file in files:
+        results = youtube_search(config["API"]["key"], file, 1)
+        videos = results[0]
+        video = videos[0]
+        video_id = video[1]
+        video_ids.append(video_id)
 
-def info(video_id: str) -> dict:
-    """
-    It retrieves the video information.
-    :param video_id: the video ID.
-    :return: None if an HttpError is caught, otherwise a dict containing:
-        - publishedAt
-        - channelId
-        - title
-        - description
-        - thumbnails
-        - channelTitle
-        - tags
-        - categoryId
-        - liveBroadcastContent
-        - localized
-        - defaultAudioLanguage
-        You can get details by using this link: (replace VIDEO_ID and API_KEY).
-         https://www.googleapis.com/youtube/v3/videos?part=snippet&id=VIDEO_ID&key=API_KEY
-    """
-    results = None
-    try:
-        results = video_info(config['API']['key'], video_id)
-    except HttpError as e:
-        print('An HTTP error %d occurred:\n%s' % (e.resp.status, e.content))
-    return results
+    # 3. Find their genre
+    # ...
+    playlists = {}
+    for video_id in video_ids:
+        genre = find_genre(config["API"]["key"], video_id)
+        if genre in playlists:  # if the genre already exist, we just need to append the video id
+            playlists[genre].append(video_id)
+        else:  # otherwise, we need to create a new key in the playlists dict
+            playlists[genre] = [video_id]
 
-
-def search(term: str, max_results: int) -> list:
-    """
-    It performs a youtube search.
-    :param term: the thing to look for,
-    :param max_results: maximum number of results,
-    :return: None if an HttpError is caught, the result otherwise: [videos, channels, playlists].
-    """
-    results = None
-    try:
-        results = youtube_search(config['API']['key'], term, max_results)
-    except HttpError as e:
-        print('An HTTP error %d occurred:\n%s' % (e.resp.status, e.content))
-    return results
+    # 4. Create youtube playlists
+    # ...
+    print(playlists)
 
 
 if __name__ == "__main__":

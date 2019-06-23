@@ -1,6 +1,7 @@
 #!/usr/bin/python
 
 from googleapiclient.discovery import build
+from googleapiclient.errors import HttpError
 
 YOUTUBE_API_SERVICE_NAME = 'youtube'
 YOUTUBE_API_VERSION = 'v3'
@@ -29,10 +30,14 @@ def video_info(developer_key: str, video_id: str) -> dict:
     youtube = build(YOUTUBE_API_SERVICE_NAME, YOUTUBE_API_VERSION,
                     developerKey=developer_key)
 
-    results = youtube.videos().list(
-        part='snippet',
-        id=video_id
-    ).execute()
+    try:
+        results = youtube.videos().list(
+            part='snippet',
+            id=video_id
+        ).execute()
+    except HttpError as e:
+        print('An HTTP error %d occurred:\n%s' % (e.resp.status, e.content))
+        return {}
 
     return results['items'][0]['snippet']
 
