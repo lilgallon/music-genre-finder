@@ -2,7 +2,7 @@
 ![opissues](https://img.shields.io/github/issues/N3ROO/playlistsByGenre.svg) 
 ![clissues](https://img.shields.io/github/issues-closed/N3ROO/playlistsByGenre.svg)
 
-🔎 It looks at music filenames, 🎵 detects the genre, and ▶ creates playlists. Made for the <XXX> course at the <YYY> (grade: <ZZZ>).
+🔎 It looks at music filenames, 🎵 detects the genre, and ▶ creates playlists.
 
 ## 1. Getting started
 ### 1.1 Prerequisites
