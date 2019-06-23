@@ -4,6 +4,34 @@
 
 🔎 It looks at music filenames, 🎵 detects the genre, and ▶ creates playlists.
 
+**Why this project?**
+I am subscribed to a lot of music channels on youtube. Since 2012, I kept the best ones, and now
+I have a total of ~7300 mp3 files of all genres:
+- 2012: 198 musics
+- 2013: 444 musics
+- 2014: 769 musics
+- 2015: 923 musics
+- 2016: 2 043 musics
+- 2017: 1 337 musics
+- 2018: 1 101 musics
+- 2019: 382 musics (in progress)
+
+I decided that I would create youtube playlists for each genre, so I can listen to them anywhere. Here is my [youtube
+channel](https://www.youtube.com/channel/UCEmXg3VBFGn7dN52OMA-inQ?view_as=subscriber) where the playlists will be published.
+
+**How to detect the music genre?**
+I saw that there are a lot of IA-based projects to detect the music genre, but it only covers *"big"* music genres.
+I mean that "pop" as a ton of sub genres, as well as "rock".
+
+I want to detect very specific genres like **neurofunk**, which is a sub genre of **drum and bass**, which is a sub
+genre of **electronic music**. To do so, I will look at the youtube video information to retrieve the genre.
+There are few approaches: 
+- Looking for the channel name (UKF Dubstep, House nation),
+- Looking for key words in the description,
+- Looking for the video tags.
+
+If youtube API is not enough, there are soundcloud, spotify, and deezer API for example.
+
 ## 1. Getting started
 ### 1.1 Prerequisites
 It works with python 3.7.3, and should be working for older versions (3+).
