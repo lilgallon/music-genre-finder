@@ -1,29 +1,30 @@
-import argparse
-
 from configparser import ConfigParser
 from googleapiclient.errors import HttpError
-from playlistsByGenre.youtube.search import youtube_search
+from youtube.search import youtube_search
 
 config = ConfigParser()
 
 
 def main():
-    print('h')
+    results = search("surfing", 5)
+    print(results)
 
 
-def search():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--q', help='Search term', default='Google')
-    parser.add_argument('--max-results', help='Max results', default=25)
-    args = parser.parse_args()
-
+def search(term: str, max_results: int) -> list:
+    """
+    It performs a youtube search.
+    :param term: the thing to look for,
+    :param max_results: maximum number of results,
+    :return: None if an HttpError is caught, the result otherwise: [videos, channels, playlists].
+    """
+    results = None
     try:
-        youtube_search(config['API']['key'], args)
+        results = youtube_search(config['API']['key'], term, max_results)
     except HttpError as e:
         print('An HTTP error %d occurred:\n%s' % (e.resp.status, e.content))
+    return results
 
 
 if __name__ == "__main__":
-    global config  # Needed to modify global copy of config
-    config.read('config.ini')
+    config.read('../config.ini')
     main()
