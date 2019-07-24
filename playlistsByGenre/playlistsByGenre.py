@@ -10,38 +10,47 @@ def main():
     # 1. Get the files to analyse
     # ... TODO
     musics = ["Bring Me The Horizon - Mother Tongue (Sub Focus Remix)",
-             "Tantrum. Today - Amateur",
-             "G-Eazy - Random (Official Audio)"]
+              "Tantrum. Today - Amateur",
+              "G-Eazy - Random (Official Audio)"]
 
     # 2. Find few channels for each music
     # ...
+
+    # Higher this number is, better the results will be (but the API requests
+    # will be heavier)
     result_amount = 5
-    results_of_musics = []
+
+    # It contains x results for each music. Here is a template:
+    # {
+    #   "music name" : {
+    #       ["video_title", "channel_id", "video_id"],
+    #       ["video_title", "channel_id", "video_id"]
+    #   },
+    #   "music name" : {
+    #       ["video_title", "channel_id", "video_id"], ... x times
+    #   }
+    # }
+    results_of_musics = {}
+
     for music in musics:
         results = youtube_search(
             config["API"]["youtube_key"],
             music,
             result_amount)
+        # We only want video results, not playlists nor channels
         videos = results[0]
-        results_of_musics.append((music, videos))
-
-    # Results of musics looks like this:
-    # [
-    #    ("music title",
-    #       ["video_title", "channel_id", "video_id"] , ... 5 times
-    #       ["video_title", "channel_id", "video_id"] , ... 5 times
-    #   ),
-    #   ...
-    # ]
+        results_of_musics[music] = videos
 
     # 3. Find their genre
     # ...
     playlists = {}
-    for results_of_music in results_of_musics:
+    for results_of_music in results_of_musics.items():
         genre = find_genre(config["API"]["youtube_key"], results_of_music[1])
-        if genre in playlists:  # if the genre already exist, we just need to append the video id
+        if genre in playlists:
+            # if the genre already exist, we just need to append the video id
             playlists[genre].append(results_of_music[0])
-        else:  # otherwise, we need to create a new key in the playlists dict
+        else:
+            # otherwise, we need to create a new key in the playlists dict
             playlists[genre] = [results_of_music[0]]
 
     # TODO: for the moment, playlists only contain the music name. It is used
