@@ -15,7 +15,8 @@
     ],
     "Neurofunk": [
         {"id": "UCH3V-b6weBfTrDuyJgFioOw", "accuracy": 20, "name": "The Dub Rebellion"},
-        {"id": "UC1hPZ15rCXacep76EgDfwyw", "accuracy": 100, "name": "NeurofunkGrid"}
+        {"id": "UC1hPZ15rCXacep76EgDfwyw", "accuracy": 100, "name": "NeurofunkGrid"},
+        {"id": "UCx-c8KY9-gv_w7Q1wb6XkbQ", "accuracy": 80, "name": "DarkstepWarrior"}
     ],
     "House": [
         {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 30, "name": "NoCopyrightSounds"},
