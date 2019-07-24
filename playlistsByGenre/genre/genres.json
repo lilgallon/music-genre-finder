@@ -1,0 +1,79 @@
+{
+    "Dubstep": [
+        {"id": "UCfLFTP1uTuIizynWsZq2nkQ", "accuracy": 100, "name": "UKF Dubstep"},
+        {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 15,  "name": "NoCopyrightSounds"},
+        {"id": "UCH3V-b6weBfTrDuyJgFioOw", "accuracy": 40, "name": "The Dub Rebellion"}
+    ],
+    "Drum & Bass": [
+        {"id": "UCr8oc-LOaApCXWLjL7vdsgw", "accuracy": 100, "name": "UKF Drum & Bass"},
+        {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 20, "name": "NoCopyrightSounds"},
+        {"id": "UCH3V-b6weBfTrDuyJgFioOw", "accuracy": 40, "name": "The Dub Rebellion"}
+    ],
+    "Liquid Drum & Bass": [
+        {"id": "UCyQKoLtVor_r1OCOBgeOofQ", "accuracy": 100, "name": "Sound Territory"},
+        {"id": "UCSXm6c-n6lsjtyjvdD0bFVw", "accuracy": 100, "name": "Liquidcity"}
+    ],
+    "Neurofunk": [
+        {"id": "UCH3V-b6weBfTrDuyJgFioOw", "accuracy": 20, "name": "The Dub Rebellion"},
+        {"id": "UC1hPZ15rCXacep76EgDfwyw", "accuracy": 100, "name": "NeurofunkGrid"}
+    ],
+    "House": [
+        {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 30, "name": "NoCopyrightSounds"},
+        {"id": "UCj_Y-xJ2DRDGP4ilfzplCOQ", "accuracy": 100, "name": "House Nation"},
+        {"id": "UCTc3vxWltlHLaxZc3e56IJg", "accuracy": 100, "name": "House City"}
+    ],
+    "Chillstep": [
+        {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 5, "name": "NoCopyrightSounds"}
+    ],
+    "Trap": [
+        {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 30, "name": "NoCopyrightSounds"},
+        {"id": "UCa10nxShhzNrCE1o2ZOPztg", "accuracy": 70, "name": "Trap Nation"},
+        {"id": "UC65afEgL62PGFWXY7n6CUbA", "accuracy": 100, "name": "Trap City"},
+        {"id": "UCMkBFD0YPtrcoB_tni5uOLQ", "accuracy": 10, "name": "ryancelsiuss"}
+    ],
+    "Hardstyle": [
+        {"id": "UC_aEa8K-EOJ3D6gOs7HcyNg", "accuracy": 5, "name": "NoCopyrightSounds"}
+    ],
+    "Bass": [
+        {"id": "UCCvVpbYRgYjMN7mG7qQN0Pg", "accuracy": 100, "name": "Bass Nation"},
+        {"id": "UC-v8o-39gThc7Mu2NzBrHkw", "accuracy": 100, "name": "Bass City"},
+        {"id": "UCa4Fy6CxWY3IZfFRo4GtNAw", "accuracy": 20, "name": "IDLEGLANCE"},
+        {"id": "UCMkBFD0YPtrcoB_tni5uOLQ", "accuracy": 10, "name": "ryancelsiuss"}
+    ],
+    "Chill": [
+        {"id": "UCM9KEEuzacwVlkt9JfJad7g", "accuracy": 20, "name": "Chill Nation"},
+        {"id": "UCrZsKQXXq652czHn8XmOIEw", "accuracy": 20, "name": "Chill City"}
+    ],
+    "Indie": [
+        {"id": "UCS34YVeqtFViWRB3jc3o2FQ", "accuracy": 100, "name": "Indie Nation"},
+        {"id": "UC9uLMAmdGQaeLPHAOqkYlrw", "accuracy": 50, "name": "AnimeVibe"},
+        {"id": "UCwpkceoj8LqJetYfgOzLLfg", "accuracy": 50, "name": "Ikigai"},
+        {"id": "UCmfWl-4D2W9xdlHBlvY6t0w", "accuracy": 80, "name": "The Worst Taste"},
+        {"id": "UC0fiLCwTmAukotCXYnqfj0A", "accuracy": 20, "name": "the bootleg boy"}
+    ],
+    "Rap": [
+        {"id": "UC8QfB1wbfrNwNFHQxfyNJsw", "accuracy": 100, "name": "Rap Nation"},
+        {"id": "UCQ5DkUL8c_vbflfQ8LRsCIg", "accuracy": 100, "name": "Rap City"},
+        {"id": "UCa4Fy6CxWY3IZfFRo4GtNAw", "accuracy": 40, "name": "IDLEGLANCE"},
+        {"id": "UCv8t4XAuIUDBNpdI-qkM-Iw", "accuracy": 100, "name": "FROAT"},
+        {"id": "UCZW5lIUz93q_aZIkJPAC0IQ", "accuracy": 100, "name": "88rising"}
+    ],
+    "Emo rap": [
+        {"id": "UCa4Fy6CxWY3IZfFRo4GtNAw", "accuracy": 40, "name": "IDLEGLANCE"},
+        {"id": "UCIZHhAFVeEmBXJwRinIImXg", "accuracy": 100, "name": "sad chill"}
+    ],
+    "Phonk": [
+        {"id": "UCMkBFD0YPtrcoB_tni5uOLQ", "accuracy": 70, "name": "ryancelsiuss"}
+    ],
+    "Lofi": [
+        {"id": "UC9uLMAmdGQaeLPHAOqkYlrw", "accuracy": 50, "name": "AnimeVibe"},
+        {"id": "UCwpkceoj8LqJetYfgOzLLfg", "accuracy": 50, "name": "Ikigai"},
+        {"id": "UC0fiLCwTmAukotCXYnqfj0A", "accuracy": 80, "name": "the bootleg boy"},
+        {"id": "UCwkTfp14Sj7o6q9_8ADJpnA", "accuracy": 80, "name": "the bootleg boy 2"},
+        {"id": "UCMkBFD0YPtrcoB_tni5uOLQ", "accuracy": 10, "name": "ryancelsiuss"}
+    ],
+    "KPOP": [
+        {"id": "UCaO6TYtlC8U5ttz62hTrZgg", "accuracy": 100, "name": "jypentertainment"},
+        {"id": "UCEf_Bc-KVd7onSeifS3py9g", "accuracy": 100, "name": "SMTOWN"}
+    ]
+}
