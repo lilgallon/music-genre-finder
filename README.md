@@ -1,36 +1,19 @@
-# Playlists by genre
-![opissues](https://img.shields.io/github/issues/N3ROO/playlistsByGenre.svg) 
-![clissues](https://img.shields.io/github/issues-closed/N3ROO/playlistsByGenre.svg)
+# Music genre finder
+![opissues](https://img.shields.io/github/issues/N3ROO/music-genre-finder.svg) 
+![clissues](https://img.shields.io/github/issues-closed/N3ROO/music-genre-finder.svg)
 
-🔎 It looks at music filenames, 🎵 detects the genre, and ▶ creates playlists.
+🔎 It looks at music files and detects their genre.
 
-**Why this project?**
-I am subscribed to a lot of music channels on youtube. Since 2012, I kept the best ones, and now
-I have a total of ~7300 mp3 files of all genres:
-- 2012: 198 musics
-- 2013: 444 musics
-- 2014: 769 musics
-- 2015: 923 musics
-- 2016: 2 043 musics
-- 2017: 1 337 musics
-- 2018: 1 101 musics
-- 2019: 382 musics (in progress)
+## 0. How does it work?
+There are a lot of IA-based projects to detect the genre of songs, but it only covers "big" music genres (*pop*, *rock* and *jazz* for example).
 
-I decided that I would create youtube playlists for each genre, so I can listen to them anywhere. Here is my [youtube
-channel](https://www.youtube.com/channel/UCEmXg3VBFGn7dN52OMA-inQ?view_as=subscriber) where the playlists will be published.
+This project consists in detecting very specific genres like *neurofunk*, *dubstep*, *lofi*, and *rap*. To do so, the program uses YouTube API
+to get videos matching the song name. Then, with these videos, we can find useful information by taking a look at:
+- the channel name (UKF Dubstep, House nation),
+- some key words in the description,
+- the tags.
 
-**How to detect the music genre?**
-I saw that there are a lot of IA-based projects to detect the music genre, but it only covers *"big"* music genres.
-I mean that "pop" as a ton of sub genres, as well as "rock".
-
-I want to detect very specific genres like **neurofunk**, which is a sub genre of **drum and bass**, which is a sub
-genre of **electronic music**. To do so, I will look at the youtube video information to retrieve the genre.
-There are few approaches: 
-- Looking for the channel name (UKF Dubstep, House nation),
-- Looking for key words in the description,
-- Looking for the video tags.
-
-If youtube API is not enough, there are soundcloud, spotify, and deezer API for example.
+If youtube API is not enough, we could use soundcloud, spotify, and deezer APIs.
 
 ## 1. Getting started
 ### 1.1 Prerequisites
