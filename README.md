@@ -17,14 +17,18 @@ If youtube API is not enough, we could use soundcloud, spotify, and deezer APIs.
 
 ## 1. Getting started
 ### 1.1 Prerequisites
-It works with python 3.7.3, and should be working for older versions (3+).
-Then, open a terminal and type `pip install -r requirements.txt` to install the needed libraries.
+- **python**: It works with python 3.7.3, and should be working for older versions (3+).
+- **libraries**: Open a terminal and type `pip install -r requirements.txt` to install the needed libraries.
+- **api key**: You need a Google API key that supports YouTube Data v3. Follow what is said in this link: https://developers.google.com/youtube/v3/getting-started
 
-### 1.2 How to use it
-*Still in development*
+### 1.2 Setting up your dev environment
+Put your Google API Key inside config.ini:
+```
+youtube_key = your_api_key_without_quotes
+```
 
-### 1.3 Setting up your dev environment
-There is nothing special to do once that you match the prerequisites. You can use any IDE.
+### 1.3 How to use it
+For the moment, you can only use it by typing `python musicGenreFinder.py` in a terminal that is inside *musicGenreFinder* folder. It will be more "user-friendly" in the future.
 
 ## 2. Miscellaneous
 ### 2.1 Changelog
