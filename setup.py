@@ -76,7 +76,7 @@ setup(
     #
     # This field corresponds to the "Home-Page" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#home-page-optional
-    url='https://github.com/N3ROO/Createmusic-genre-finder',  # Optional
+    url='https://github.com/N3ROO/music-genre-finder',  # Optional
 
     # This should be your name or the name of the organization which owns the
     # project.
@@ -114,7 +114,7 @@ setup(
     # project page. What does your project relate to?
     #
     # Note that this is a string of words separated by whitespace, not a list.
-    keywords='music genre playlist youtube',  # Optional
+    keywords='music genre finder youtube',  # Optional
 
     # You can just specify package directories manually here if your project is
     # simple. Or you can use find_packages().
@@ -199,7 +199,7 @@ setup(
     # maintainers, and where to support the project financially. The key is
     # what's used to render the link text on PyPI.
     project_urls={  # Optional
-        'Bug Reports': 'https://github.com/N3ROO/Createmusic-genre-finder/issues',
-        'Source': 'https://github.com/N3ROO/Createmusic-genre-finder',
+        'Bug Reports': 'https://github.com/N3ROO/music-genre-finder/issues',
+        'Source': 'https://github.com/N3ROO/music-genre-finder',
     },
 )
