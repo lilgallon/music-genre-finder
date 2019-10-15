@@ -1,3 +1,5 @@
+![logo](.github/music-genre-finder-200x.png)
+
 # Music genre finder
 ![opissues](https://img.shields.io/github/issues/N3ROO/music-genre-finder.svg) 
 ![clissues](https://img.shields.io/github/issues-closed/N3ROO/music-genre-finder.svg)
