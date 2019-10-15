@@ -33,11 +33,33 @@ youtube_key = your_api_key_without_quotes
 For the moment, you can only use it by typing `python musicGenreFinder.py` in a terminal that is inside *musicGenreFinder* folder. It will be more "user-friendly" in the future.
 
 ## 2. Miscellaneous
-### 2.1 Changelog
+### 2.1 Todo list
+
+**Basics (first release):**
+- [x] Genre classification working with YouTube channels
+- [ ] Dictionnary feeding (we need more data!)
+- [ ] Working script using command lines
+
+**Improvements (core):**
+- [ ] Use machine learning to feed the dictionnary
+- [ ] Genre classification by taking in account YT videos description
+- [ ] Genre classification by taking in account YT videos tags
+- [ ] Genre classification by taking in account Spotify/Deezer/Soundcloud APIs
+
+**Improvements (ui):**
+- [ ] Create an user-friendly interface (as a software? as a website? with electron?)
+
+Here is an idea of what it could look like. It may be possible to create
+playlists according to the genre. It could also be a way to feed the
+dictionnary by asking the user the genre of the music if it was not found.
+
+![ui-concept](.github/ui-concept.png)
+
+### 2.2 Changelog
 The changelog is available [here](CHANGELOG.md).
 
-### 2.2 Authors
+### 2.3 Authors
 - **N3ROO** - *Initial work* - [Github](https://github.com/N3ROO) [Website](https://n3roo.github.io/)
 
-### 2.3 License
+### 2.4 License
 This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details
